@@ -1,0 +1,325 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+    overflow: hidden;
+}
+section{
+    background: linear-gradient(to top, rgb(15, 58, 150), rgb(65, 104, 189));
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background: rgb(67, 124, 197);
+    border-radius:15px;
+    transform: translateY(200px);
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow:0px 0px 10px blue;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(-1300px) rotateZ(900deg);
+    }
+}
+#box1{
+    z-index: 6;
+    animation-duration: 50s;
+    filter: brightness(100%) blur(5px);
+    animation-delay: 3s;
+    height:100px;
+    width:100px;
+}
+#box2{
+    z-index:5;
+    animation-duration: 45s;
+    filter: brightness(90%) blur(6px);
+    animation-delay: 1.5s;
+    height:90px;
+    width:90px;
+}
+#box3{
+    z-index:2;
+    animation-duration: 34s;
+    filter: brightness(60%) blur(9px);
+    animation-delay:2s;
+    height:60px;
+    width:60px;
+}
+#box4{
+    z-index:4;
+    animation-duration: 39s;
+    filter: brightness(80%) blur(7px);
+    animation-delay: 2.5s;
+    height:80px;
+    width:80px;
+}
+#box5{
+    z-index:7;
+    animation-duration: 50s;
+    filter: brightness(110%) blur(4px);
+    height:110px;
+    width:110px;
+}
+#box6{
+    z-index: 3;
+    animation-duration: 46s;
+    filter: brightness(70%) blur(8px);
+    animation-delay: 2s;
+    height:70px;
+    width:70px;
+}
+#box7{
+    z-index:5;
+    animation-duration: 47s;
+    filter: brightness(90%) blur(6px);
+    height:90px;
+    width:90px;
+}
+#box8{
+    z-index: 2;
+    animation-duration: 40s;
+    filter: brightness(60%) blur(9px);
+    animation-delay:3.2s;
+    height:60px;
+    width:60px;
+}
+#box9{
+    z-index: 6;
+    animation-duration: 42s;
+    filter: brightness(100%) blur(5px);
+    animation-delay: 1s;
+    height:100px;
+    width:100px;
+}
+#box10{
+    z-index: 1;
+    animation-duration: 62s;
+    filter: brightness(50%) blur(10px);
+    animation-delay:4s;
+    height:50px;
+    width:50px;
+}
+#box11{
+    z-index: 4;
+    animation-duration: 49s;
+    filter: brightness(80%) blur(7px);
+    height:80px;
+    width:80px;
+}
+#box11{
+    z-index: 4;
+    animation-duration: 65s;
+    filter: brightness(80%) blur(6px);
+    animation-delay:3s;
+    height:80px;
+    width:80px;
+}
+#box12{
+    z-index: 5;
+    animation-duration: 54s;
+    filter: brightness(90%) blur(6px);
+    height:90px;
+    width:90px;
+}
+#box13{
+    z-index: 5;
+    animation-duration: 48s;
+    filter: brightness(90%) blur(6px);
+    height:70px;
+    width:70px;
+}
+#box14{
+    z-index:7;
+    animation-duration:42s;
+    filter: brightness(110%) blur(4px);
+    height:110px;
+    width:110px;
+}
+#box15{
+    z-index: 4;
+    animation-duration:59s;
+    filter: brightness(80%) blur(7px);
+    height:80px;
+    width:80px;
+}
+#box16{
+    z-index: 1;
+    animation-duration:43s;
+    filter: brightness(50%) blur(10px);
+    height:50px;
+    width:50px;
+}
+.bar{
+    width:100%;
+    height:60px;
+    position:absolute;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.topbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    height:60px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow:0px 0px 20px -2px white;
+    border-bottom:2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    z-index: 11;
+}
+.topbar img{
+    width:40px;
+}
+.topbar h1{
+    color:white;
+    font-weight:600;
+    text-shadow:0px 0px 10px black;
+}
+.center{
+    position: relative;
+    width:900px;
+    height:650px;
+    background: transparent;
+    z-index:9;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow:
+    0px 0px 20px cyan,
+    0px 0px 20px cyan inset;
+    border:2px solid cyan;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color:white;
+    padding-top:20px;
+}
+.center img{
+    width:450px;
+    transform: translateY(70px);
+    filter: drop-shadow(0px 0px 10px black);
+}
+.center h1{
+    text-shadow:0px 0px 10px black;
+    font-size:2.7em;
+    transform: translateY(30px);
+}
+.center p{
+    transform: translateY(30px);
+    text-shadow:0px 0px 10px black;
+    font-size:1.3em;
+}
+.center p span{
+    color:rgb(0, 162, 255);
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.center button{
+    color:white;
+    background: black;
+    outline: none;
+    border:none;
+    width:100px;
+    position:absolute;
+    bottom:100px;
+    width:200px;
+    height:50px;
+    font-size:1.3em;
+    font-weight: 100;
+    border-radius:5000px;
+    box-shadow:0px 0px 10px black;
+    transition:.3s;
+    cursor:pointer;
+}
+.center button:hover{
+    background: rgb(0, 162, 255);
+    box-shadow:0px 0px 20px rgb(0, 162, 255);
+    color: black;
+    animation-name:grow;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes grow{
+    50%{transform: scale(1.05);}
+}
+
+@media screen and (max-width:1100px){
+    .center{
+        transform: scale(.9);
+    }
+}
+@media screen and (max-width:800px){
+    
+    .topbar{
+        height:40px;
+    }
+    .topbar img{
+        width:30px;
+    }
+    .topbar h1{
+        font-size:1.2em;
+    }
+    .center{
+        width:100%;
+        height:550px;
+    }
+    .center img{
+        width:300px
+    }
+    .center h1{
+        font-size:2em;
+    }
+    .center p{
+        font-size:.8em;
+    }
+    .center button{
+        transform:scale(.8)
+    }
+    @keyframes grow{
+        50%{transform: scale(.85);}
+    }
+    #box2{
+        display:none;
+    }
+    #box10{
+        display:none;
+    }
+    #box5{
+        display:none;
+    }
+    #box9{
+        display:none;
+    }
+    #box7{
+        display:none;
+    }
+    #box14{
+        display:none;
+    }
+    #box13{
+        display:none;
+    }
+    #box1{
+        display:none;
+    }
+}
