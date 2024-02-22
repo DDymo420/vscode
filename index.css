@@ -293,7 +293,8 @@ section{
         font-size:.8em;
     }
     .center button{
-        transform:scale(.8)
+        transform:scale(.8);
+        font-weight:bold;
     }
     @keyframes grow{
         50%{transform: scale(.85);}
